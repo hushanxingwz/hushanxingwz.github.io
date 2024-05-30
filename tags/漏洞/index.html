@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>漏洞 - 虎山行网赚</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://hushanxingwz.github.io/tags/%E6%BC%8F%E6%B4%9E/">
+  <meta property="og:site_name" content="虎山行网赚">
+  <meta property="og:title" content="漏洞">
+  <meta property="og:description" content="虎山行网赚">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="website">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="alternate" type="application/rss+xml" href="/tags/%E6%BC%8F%E6%B4%9E/index.xml" title="虎山行网赚">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+  
+
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="虎山行网赚" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">虎山行网赚</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">漏洞</h1>
+	</header><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/posts/12d1d782505f375504c0ac84e658f355/" rel="bookmark">
+			织梦dedecms5.7版本在阿里云安全中心提示Web-CMS漏洞解决方法汇总及全文件覆盖
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-09-19T22:03:40&#43;08:00">2019-09-19</time></div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		全新织梦dedecms5.7版上传至阿里云安装使用，云安全中心提示下图漏洞，会导致百度快照被劫持等一系列问题。
+直接使用新的安装包就可以，或者是部分文件替换。
+在评论处回复，自动获取下载链接
+此处为隐藏内容，请评论后查看隐藏内容，谢谢！
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/posts/0a85b483de3616fddb30b5986c27cb60/" rel="bookmark">
+			织梦dedecms后台文件media_add.php任意上传漏洞解决办法
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-09-17T09:26:12&#43;08:00">2019-09-17</time></div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		织梦在安装到阿里云服务器后阿里云后台会提示media_add.php后台文件任意上传漏洞，引起的文件是后台管理目录下的media_add.php文件，下面跟大家分享一下这个漏洞的修复方法：
+首先找到并打开后台管理目录下的media_add.php文件，在里面找到如下代码：
+$fullfilename = $cfg_basedir.$filename;
+在其上面添加一段如下代码： if (preg_match('#\.(php|pl|cgi|asp|aspx|jsp|php5|php4|php3|shtm|shtml)[^a-zA-Z0-9]+$#i', trim($filename))){ShowMsg("你指定的文件名被系统禁止！",'java script:;');exit();} 添加完成后保存并替换原来的文件即可。
+一定要注意分行，不分行是不能修复的。
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/posts/5b9d3a333929cd24ffc382ac645098fc/" rel="bookmark">
+			dedecms织梦阿里云安全中心提示留言板注入漏洞解决方法
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-09-14T09:18:20&#43;08:00">2019-09-14</time></div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		漏洞描述：
+dedecms注入漏洞
+dedecms留言板注入漏洞。
+/plus/guestbook/edit.inc.php 这个是一个dedecms留言板注入漏洞，因为没有对$msg过滤，导致可以任意注入，处理方案如下：
+打开/plus/guestbook/edit.inc.php，搜索以下代码：
+else if($job=='editok')
+修改为：
+else if($job=='editok') { $remsg = trim($remsg); /* 验证$g_isadmin */ if($remsg!='') { //管理员回复不过滤HTML if($g_isadmin) { $msg = "&lt;div class=\\'rebox\\'&gt;".$msg."&lt;/div&gt;\n".$remsg; //$remsg &lt;br&gt;&lt;font color=red&gt;管理员回复：&lt;/font&gt; } else { $row = $dsql-&gt;GetOne("SELECT msg From `a15_guestbook` WHERE id='$id' "); $oldmsg = "&lt;div class=\\'rebox\\'&gt;".addslashes($row['msg'])."&lt;/div&gt;\n"; $remsg = trimMsg(cn_substrR($remsg, 1024), 1); $msg = $oldmsg.$remsg; } } /* */ /* 对$msg进行有效过滤 */ $msg = addslashes($msg); /* */ $dsql-&gt;ExecuteNoneQuery("UPDATE `a15_guestbook` SET `msg`='$msg', `posttime`='"
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/posts/5b9d3a333929cd24ffc382ac645098fc/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/posts/388fe62f19692d330d91d0b250841381/" rel="bookmark">
+			dedecms织梦阿里云安全中心提示上传漏洞解决方法
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-09-14T09:05:54&#43;08:00">2019-09-14</time></div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		志汇网络接手的一个企业站用的dedecms，这么成熟CMS怎么有这么多漏洞，百度快照都被劫持了，阿里云的云安全中心已经提示报警，接下来一个一个解决。
+漏洞描述：
+dedecms过滤逻辑不严导致上传漏洞。
+修改/include/uploadsafe.inc.php文件
+&lt;?phpif(!defined('DEDEINC')) exit('Request Error!');if(isset($_FILES['GLOBALS'])) exit('Request not allow!');//为了防止用户通过注入的可能性改动了数据库//这里强制限定的某些文件类型禁止上传$cfg_not_allowall = "php|pl|cgi|asp|aspx|jsp|php3|shtm|shtml";$keyarr = array('name', 'type', 'tmp_name', 'size');if ($GLOBALS['cfg_html_editor']=='ckeditor' &amp;&amp; isset($_FILES['upload'])){$_FILES['imgfile'] = $_FILES['upload'];$CKUpload = TRUE;unset($_FILES['upload']);}foreach($_FILES as $_key=&gt;$_value){foreach($keyarr as $k){if(!isset($_FILES[$_key][$k])){exit('Request Error!');}}if( preg_match('#^(cfg_|GLOBALS)#', $_key) ){exit('Request var not allow for uploadsafe!');}$$_key = $_FILES[$_key]['tmp_name'];${$_key.'_name'} = $_FILES[$_key]['name'];${$_key.'_type'} = $_FILES[$_key]['type'] = preg_replace('#[^0-9a-z\.
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/posts/388fe62f19692d330d91d0b250841381/">Read more…</a>
+	</div>
+</article>
+</main>
+
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 虎山行网赚.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+<div id="gafoot"></div>
+<script src="https://101121.xyz/ga/app.js"></script>
+
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

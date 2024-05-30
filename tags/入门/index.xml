@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>入门 on 虎山行网赚</title>
+    <link>https://hushanxingwz.github.io/tags/%E5%85%A5%E9%97%A8/</link>
+    <description>Recent content in 入门 on 虎山行网赚</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 23 Sep 2019 11:11:24 +0800</lastBuildDate>
+    <atom:link href="https://hushanxingwz.github.io/tags/%E5%85%A5%E9%97%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python入门学习之斐波纳契数列，两个元素的总和确定了下一个数</title>
+      <link>https://hushanxingwz.github.io/posts/14b792af84ead2d0e0ed2b4f332b7829/</link>
+      <pubDate>Mon, 23 Sep 2019 11:11:24 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/14b792af84ead2d0e0ed2b4f332b7829/</guid>
+      <description>a, b = 0, 1&#xD;while b &amp;lt; 10: print(b) a, b = b, a+b其中代码 a, b = b, a+b 的计算方式为先计算右边表达式，然后同时赋值给左边，等价于：&#xA;n=b&#xD;m=a+b&#xD;a=n&#xD;b=m执行以上程序，输出结果为：&#xA;1&#xD;1&#xD;2&#xD;3&#xD;5&#xD;8</description>
+    </item>
+    <item>
+      <title>Python入门学习之入门经典100例，for的嵌套循环使用</title>
+      <link>https://hushanxingwz.github.io/posts/e43034db2bd307adec4027aacf2a0b12/</link>
+      <pubDate>Wed, 18 Sep 2019 20:37:22 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/e43034db2bd307adec4027aacf2a0b12/</guid>
+      <description>题目：企业发放的奖金根据利润提成。利润(I)低于或等于10万元时，奖金可提10%；利润高于10万元，低于20万元时，低于10万元的部分按10%提成，高于10万元的部分，可可提成7.5%；20万到40万之间时，高于20万元的部分，可提成5%；40万到60万之间时高于40万元的部分，可提成3%；60万到100万之间时，高于60万元的部分，可提成1.5%，高于100万元时，超过100万元的部分按1%提成，从键盘输入当月利润I，求应发放奖金总数？&#xA;i = int(raw_input(&#39;净利润:&#39;))&#xD;arr = [1000000,600000,400000,200000,100000,0]&#xD;rat = [0.01,0.015,0.03,0.05,0.075,0.1]&#xD;r = 0&#xD;for idx in range(0,6): if i&amp;gt;arr[idx]: r+=(i-arr[idx])*rat[idx]&#xD;print (i-arr[idx])*rat[idx]&#xD;i=arr[idx]&#xD;print r&#xA;知识点解析：&#xA;raw_input() 将所有输入作为字符串看待，返回字符串类型。&#xA;python range() 函数可创建一个整数列表，一般用在 for 循环中。&#xA;我的逻辑，直接用if判断&#xA;#i = int(raw_input(&#39;请输入利润&#39;))&#xD;i = 520000&#xD;if i &amp;lt;= 100000:&#xD;print(&#34;奖金总数为&#34; ,i*0.1)&#xD;elif i &amp;lt;= 200000:&#xD;print(&#34;奖金总数为&#34; ,100000*0.1+(i-100000)*0.075)&#xD;elif i &amp;lt;= 400000:&#xD;print(&#34;奖金总数为&#34; ,100000*0.1+100000*0.075+(i-200000)*0.05)&#xD;elif i &amp;lt;= 600000:&#xD;print(&#34;奖金总数为&#34; ,100000*0.1+100000*0.075+200000*0.05+(i-400000)*0.03)&#xD;elif i &amp;lt;= 1000000:&#xD;print(&#34;奖金总数为&#34; ,100000*0.</description>
+    </item>
+    <item>
+      <title>Python入门学习之区块链模拟实例</title>
+      <link>https://hushanxingwz.github.io/posts/8a6fe5a10d38b9c88c08d7d0ca3bfebb/</link>
+      <pubDate>Tue, 17 Sep 2019 20:52:26 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/8a6fe5a10d38b9c88c08d7d0ca3bfebb/</guid>
+      <description>主要是Python函数的定义，函数参数的传递，列表截取等应用&#xA;blockchian = [1]&#xD;def add_value(money):&#xD;blockchian.append([blockchian[-1],money])&#xD;print(blockchian)&#xD;add_value(2.3)&#xD;add_value(4.6)&#xD;add_value(5.8)&#xD;add_value(4)&#xA;输出内容：&#xA;[1, [1, 2.3]]&#xA;[1, [1, 2.3], [[1, 2.3], 4.6]]&#xA;[1, [1, 2.3], [[1, 2.3], 4.6], [[[1, 2.3], 4.6], 5.8]]&#xA;[1, [1, 2.3], [[1, 2.3], 4.6], [[[1, 2.3], 4.6], 5.8], [[[[1, 2.3], 4.6], 5.8], 4]]&#xA;自己又默了一遍发现几个单词没记住，列表截取的语法没用对</description>
+    </item>
+    <item>
+      <title>Python入门学习之注释、行与缩进</title>
+      <link>https://hushanxingwz.github.io/posts/58861a80ff384533cd8252ef2a16bf3b/</link>
+      <pubDate>Mon, 09 Sep 2019 20:13:39 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/58861a80ff384533cd8252ef2a16bf3b/</guid>
+      <description>Python3中单行注释以 # 开头，实例如下：#!/usr/bin/python3&#xD;# 第一个注释&#xD;print (&#34;Hello, Python!&#34;) # 第二个注释&#xA;Python3中多行注释可以用多个 # 号，还有 &#39;&#39;&#39; 和 &#34;&#34;&#34;。实例如下：#!/usr/bin/python3&#xD;# 第一个注释# 第二个注释&#xD;&#39;&#39;&#39;&#xD;第三注释&#xD;第四注释&#xD;&#39;&#39;&#39;&#xD;&#34;&#34;&#34;&#xD;第五注释&#xD;第六注释&#xD;&#34;&#34;&#34;&#xD;print (&#34;Hello, Python!&#34;)&#xA;Python3中行与缩进python最具特色的就是使用缩进来表示代码块，不需要使用大括号 {} 。&#xA;缩进的空格数是可变的，但是同一个代码块的语句必须包含相同的缩进空格数。实例如下：&#xA;if True: print (&#34;True&#34;)&#xD;else: print (&#34;False&#34;)&#xA;以下代码最后一行语句缩进数的空格数不一致，会导致运行错误：&#xA;if True:&#xD;print (&#34;Answer&#34;)&#xD;print (&#34;True&#34;)&#xD;else:&#xD;print (&#34;Answer&#34;)&#xD;print (&#34;False&#34;) # 缩进不一致，会导致运行错误</description>
+    </item>
+    <item>
+      <title>Python入门学习之Python编辑器PyCharm2019安装教程</title>
+      <link>https://hushanxingwz.github.io/posts/e63ac0e952d2404ddbffb7f83acecffe/</link>
+      <pubDate>Sun, 08 Sep 2019 11:33:10 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/e63ac0e952d2404ddbffb7f83acecffe/</guid>
+      <description>&#xA;&lt;div class=&#34;page-article&#34;&gt;&lt;span style=&#34;line-height:2;color:#333333;font-size:16px;font-family:&#39;Microsoft YaHei&#39;;&#34;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;p style=&#34;text-align: center;&#34;&gt;&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;&lt;span style=&#34;font-size: 16px;&#34;&gt;PyCharm编辑器是是个人认为功能齐全且专用的Python IDE，还能汉化。不过也还有其他比较好用的编辑器比如说Jupyter Notebook，Spyder。这里我用的是PyCharm2019，来看看它的安装过程&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&#34;font-size: 16px;&#34;&gt;首先下载安装包，可以PyCharm官网点击链接，直接下载https://www.jetbrains.com/pycharm/download/#section=windows，这里是windows版的，其他版本自行寻找。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://images2.imgbox.com/67/df/rW0SY2Vu_o.png&#34; title=&#34;Python入门学习之Python编辑器PyCharm2019安装教程&#34; alt=&#34;Python入门学习之Python编辑器PyCharm2019安装教程&#34; width=&#34;100%&#34; height=&#34;&#34; border=&#34;0&#34; vspace=&#34;0&#34;&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&#34;font-size: 16px;&#34;&gt;点击Next后继续安装选择，根据自己需求选择，我是全选的。再接着下一步，点击稍后重启。安装完成。&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python入门学习之Python3.7下载安装</title>
+      <link>https://hushanxingwz.github.io/posts/862b2a2cc513f2d6fb1ca568ff5489b8/</link>
+      <pubDate>Sun, 08 Sep 2019 11:05:59 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/862b2a2cc513f2d6fb1ca568ff5489b8/</guid>
+      <description>Python是目前最火的一门编程语言，应用非常广泛，自动化办公、网页爬虫、web开发。&#xA;西红柿打算开始从0开始学习Python。&#xA;今天是打算配置好python的安装环境和主程序的安装。&#xA;下载的路径是python官网https://www.python.org（浏览器自动翻译，英语不是很好）&#xA;打开官网后选择好自己的系统下载。&#xA;下载 完成后，打开安装包选择Install Now 会按照默认路径进行安装（不建议）。建议选择Customize installation修改安装路径。并且勾选上最下方的ADDPython 3.7 to PATH。&#xA;我是默认安装在C盘，你也可以选择其他的盘符。安装完成之后打开开始找到python3.7（64-bit）&#xA;打开之后试试第一个程序</description>
+    </item>
+  </channel>
+</rss>

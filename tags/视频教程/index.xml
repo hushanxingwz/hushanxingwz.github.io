@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>视频教程 on 虎山行网赚</title>
+    <link>https://hushanxingwz.github.io/tags/%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B/</link>
+    <description>Recent content in 视频教程 on 虎山行网赚</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 27 Nov 2019 15:50:39 +0800</lastBuildDate>
+    <atom:link href="https://hushanxingwz.github.io/tags/%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ptcms听书可下载的小说站源码带3套模板&#43;搭建视频教程&#43;后台采集&#43;wap手机版</title>
+      <link>https://hushanxingwz.github.io/posts/fd698724a6afaa8db24d3ea570b0b1cb/</link>
+      <pubDate>Wed, 27 Nov 2019 15:50:39 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/fd698724a6afaa8db24d3ea570b0b1cb/</guid>
+      <description> 必装环境：nginx(apache.iis也可)，mysql,php5.6,memcached php5.6安装扩展memcache&#xA;新建站点，注意新建时，PHP版本必须选择PHP5.6，不然程序会报错&#xA;1.上传网站文件到网站目录，新建网站伪静态选择thinkphp&#xA;2.新建数据库。导入数据库文件ptcms.sql&#xA;3.修改数据库信息/application/common/config.php&#xA;注意：如果伪静态正常网站还出现404，打开根目录index.php 在倒数第二行添加：&#xA;define(‘APP_DEBUG’,true);&#xA;网站正常后删除&#xA;4.登录网站后台：域名/admin&#xA;用户名：admin&#xA;密码： admin123&#xA;5.”系统” – “基本设置” – “数据库” – 把第三步再设置一遍&#xA;6.”系统” – “基本设置” – 修改为自己的既可&#xA;7.”扩展” – “任务管理” – “任务管理” – “全选” – “恢复” -开启自动采集&#xA;8.”扩展” – “模块管理” – “网站地图” – 修改为自己的既可&#xA;9.”扩展” – “模块管理” – “手机地图” – 修改为自己的既可&#xA;10.”用户” – 管理员密码修改&#xA;免费下载地址：https://pan.baidu.com/s/1WV2DC0Bz-A1Q7SGNlRViKA 提取码：dd76&#xA;解压密码：下方回复【志汇分享】后刷新网页&#xA;此处为隐藏内容，请评论后查看隐藏内容，谢谢！&#x9;</description>
+    </item>
+  </channel>
+</rss>

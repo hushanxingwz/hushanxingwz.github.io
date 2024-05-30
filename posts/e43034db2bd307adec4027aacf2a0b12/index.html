@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Python入门学习之入门经典100例，for的嵌套循环使用 - 虎山行网赚</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://hushanxingwz.github.io/posts/e43034db2bd307adec4027aacf2a0b12/">
+  <meta property="og:site_name" content="虎山行网赚">
+  <meta property="og:title" content="Python入门学习之入门经典100例，for的嵌套循环使用">
+  <meta property="og:description" content="题目：企业发放的奖金根据利润提成。利润(I)低于或等于10万元时，奖金可提10%；利润高于10万元，低于20万元时，低于10万元的部分按10%提成，高于10万元的部分，可可提成7.5%；20万到40万之间时，高于20万元的部分，可提成5%；40万到60万之间时高于40万元的部分，可提成3%；60万到100万之间时，高于60万元的部分，可提成1.5%，高于100万元时，超过100万元的部分按1%提成，从键盘输入当月利润I，求应发放奖金总数？
+i = int(raw_input(&#39;净利润:&#39;))arr = [1000000,600000,400000,200000,100000,0]rat = [0.01,0.015,0.03,0.05,0.075,0.1]r = 0for idx in range(0,6): if i&gt;arr[idx]: r&#43;=(i-arr[idx])*rat[idx]print (i-arr[idx])*rat[idx]i=arr[idx]print r
+知识点解析：
+raw_input() 将所有输入作为字符串看待，返回字符串类型。
+python range() 函数可创建一个整数列表，一般用在 for 循环中。
+我的逻辑，直接用if判断
+#i = int(raw_input(&#39;请输入利润&#39;))i = 520000if i &lt;= 100000:print(&#34;奖金总数为&#34; ,i*0.1)elif i &lt;= 200000:print(&#34;奖金总数为&#34; ,100000*0.1&#43;(i-100000)*0.075)elif i &lt;= 400000:print(&#34;奖金总数为&#34; ,100000*0.1&#43;100000*0.075&#43;(i-200000)*0.05)elif i &lt;= 600000:print(&#34;奖金总数为&#34; ,100000*0.1&#43;100000*0.075&#43;200000*0.05&#43;(i-400000)*0.03)elif i &lt;= 1000000:print(&#34;奖金总数为&#34; ,100000*0.">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2019-09-18T20:37:22+08:00">
+    <meta property="article:modified_time" content="2019-09-18T20:37:22+08:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="入门">
+    <meta property="article:tag" content="实战">
+    <meta property="article:tag" content="教程">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+  
+
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="虎山行网赚" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">虎山行网赚</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Python入门学习之入门经典100例，for的嵌套循环使用</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-09-18T20:37:22&#43;08:00">2019-09-18</time></div></div>
+		</header>
+		<div id="gatop"></div>
+		<div class="content post__content clearfix">
+			
+<div class="page-article"><span style="line-height:2;color:#333333;font-size:16px;font-family:'Microsoft YaHei';">
+			<p style="text-align: center;"></p>
+
+<p><br></p><p>题目：企业发放的奖金根据利润提成。利润(I)低于或等于10万元时，奖金可提10%；利润高于10万元，低于20万元时，低于10万元的部分按10%提成，高于10万元的部分，可可提成7.5%；20万到40万之间时，高于20万元的部分，可提成5%；40万到60万之间时高于40万元的部分，可提成3%；60万到100万之间时，高于60万元的部分，可提成1.5%，高于100万元时，超过100万元的部分按1%提成，从键盘输入当月利润I，求应发放奖金总数？</p><p><br></p><pre class="prism-highlight prism-language-python">i = int(raw_input('净利润:'))
+arr = [1000000,600000,400000,200000,100000,0]
+rat = [0.01,0.015,0.03,0.05,0.075,0.1]
+r = 0
+for idx in range(0,6):    
+    if i&gt;arr[idx]:        
+        r+=(i-arr[idx])*rat[idx]
+        print (i-arr[idx])*rat[idx]
+        i=arr[idx]
+print r</pre><p><br></p><p><br></p><p>知识点解析：</p><p><br></p><p>raw_input() 将所有输入作为字符串看待，返回字符串类型。</p><p><br></p><p>python range() 函数可创建一个整数列表，一般用在 for 循环中。</p><p><span style='color: #333333; font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei", Arial, sans-serif; font-size: 13px; background-color: #FFFFFF;'><br></span></p><p><font color="#333333" face="Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif"><span style="font-size: 13px; background-color: #FFFFFF;">我的逻辑，直接用if判断</span></font></p><pre class="prism-highlight prism-language-python">#i = int(raw_input('请输入利润'))
+
+i = 520000
+
+if i &lt;= 100000:
+	print("奖金总数为" ,i*0.1)
+elif i &lt;= 200000:
+	print("奖金总数为" ,100000*0.1+(i-100000)*0.075)
+elif i &lt;= 400000:
+	print("奖金总数为" ,100000*0.1+100000*0.075+(i-200000)*0.05)
+elif i &lt;= 600000:
+	print("奖金总数为" ,100000*0.1+100000*0.075+200000*0.05+(i-400000)*0.03)
+elif i &lt;= 1000000:
+	print("奖金总数为" ,100000*0.1+100000*0.075+200000*0.05+400000*0.03+(i-600000)*0.015)
+elif i &gt; 1000000:
+	print("奖金总数为" ,100000*0.1+100000*0.075+200000*0.05+400000*0.03+600000*0.015+(i-1000000)*0.01)</pre><p><span style='color: #333333; font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei", Arial, sans-serif; font-size: 13px; background-color: #FFFFFF;'></span><br></p><p><br></p>	</span></div>
+		</div>
+		<div id="gabottom"></div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/python/" rel="tag">python</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E5%85%A5%E9%97%A8/" rel="tag">入门</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E5%AE%9E%E6%88%98/" rel="tag">实战</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/posts/52f31f9db6b64d014c3df09c9bbad068/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">微信挂机平台收益评测，到底选哪个好？</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/posts/c1a8017d574316a237377ad69feace7c/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">华为Mate30系列什么价格？3999起？</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 虎山行网赚.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+<div id="gafoot"></div>
+<script src="https://101121.xyz/ga/app.js"></script>
+
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

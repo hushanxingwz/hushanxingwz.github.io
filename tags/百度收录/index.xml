@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>百度收录 on 虎山行网赚</title>
+    <link>https://hushanxingwz.github.io/tags/%E7%99%BE%E5%BA%A6%E6%94%B6%E5%BD%95/</link>
+    <description>Recent content in 百度收录 on 虎山行网赚</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 12 Mar 2020 16:22:28 +0800</lastBuildDate>
+    <atom:link href="https://hushanxingwz.github.io/tags/%E7%99%BE%E5%BA%A6%E6%94%B6%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>百度站长平台链接自动推送提交暂停服务，自动提交没有数据了</title>
+      <link>https://hushanxingwz.github.io/posts/6a8bfafcfe65e4ca7e744cfc9d5179d5/</link>
+      <pubDate>Thu, 12 Mar 2020 16:22:28 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/6a8bfafcfe65e4ca7e744cfc9d5179d5/</guid>
+      <description>百度站长平台链接自动推送提交暂停服务，自动提交没有数据了&#xA;懒人做站就是每天一篇，关键词随便想想，绞尽脑汁想点主题码点字。好处就是无欲无求，让网站自生自灭，活下去就靠它自己了。&#xA;有空的时候就看看百度统计的访问量，百度站长平台的数据，小站没啥好优化了（评论区还没弄，打脸）。一看才发现，只从 2月26号以后，自动链接推送的数据就显示为零，sitemap也是没有数据，昨天还更新，今天任然没抓取。&#xA;出现这种问题就要去解决，马上检查自动推送的JS代码是否有问题，发现没做更改后，又去检查sitemap页面也是正常，实在找不到，跑去qq群里问，没想到百度站长早就发了通知，只是没注意：&#xA;尊敬的搜索合作伙伴：&#xA;您好！由于升级维护，搜索资源平台链接提交-自动提交-自动推送（JS代码推送）功能暂时停止使用。&#xA;给您带来的不便敬请谅解，我们将在恢复使用时再次通知。&#xA;害，还花了那么长时间瞎折腾。&#xA;自动提交和sitemap都没用只有主动提交链接了，主动提交每次提交的网住数量只有20个，对于我这个网址数量不是很多的小站长，用了excle表格来生成。&#xA;这种方法还是太麻烦，要去研究代码主动提交的方法。用了Z-BlogPHP后台的百度主动插件：提示错误。</description>
+    </item>
+    <item>
+      <title>网传：百度竞价封杀SEO搜索优化推广业务</title>
+      <link>https://hushanxingwz.github.io/posts/63d0e6b63d7348287b52a4af78e9e249/</link>
+      <pubDate>Fri, 03 Jan 2020 18:14:40 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/63d0e6b63d7348287b52a4af78e9e249/</guid>
+      <description>今天在群里吹牛逼，有人爆料：百度竞价即将开始实行禁止推广SEO搜索优化业务，严打SEO黑帽、SEO黑产、SEO优化等业务推广，未来百度竞价全面下架清理SEO搜索优化业务，直接纳入百度竞价广告禁推政策，在继封杀医疗业务推广之后，SEO搜索优化也面临被全面封杀。&#xA;百度方面的表示为 ：近期总部发现在百度推广搜索引擎优化广告中， 存在大量采用作弊手段改变搜索结果的灰色产业链，严重影响百度搜索广告生态健康性。为保证平台健康发展,全面禁止推广SEO搜索引擎优化服务，将SEO搜索优化业务纳入百度广告禁推政策。&#xA;越禁止说明效果越好，做快排的那帮人弄得更欢了。</description>
+    </item>
+    <item>
+      <title>301重定向之后网站收录变快了很多</title>
+      <link>https://hushanxingwz.github.io/posts/2263d3fcd624c0422f7e589a90ec87b7/</link>
+      <pubDate>Thu, 17 Oct 2019 20:28:08 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/2263d3fcd624c0422f7e589a90ec87b7/</guid>
+      <description>百度收录不带www的域名，带有www的域名不收录上面这篇博文是10月9号写的。&#xA;那天设置的301重定向，那是百度只收录了首页，目前17号已经收录了33条网址。&#xA;一定要坚持更新，坚持原创。现在每天都要想着更新什么内容，接触新的事物，python学习也停了很久，手头上还有几个项目还没落实到位。</description>
+    </item>
+    <item>
+      <title>百度收录不带www的域名，带有www的域名不收录</title>
+      <link>https://hushanxingwz.github.io/posts/ae3216b05a92ff56dcd6faf59ae06d0b/</link>
+      <pubDate>Wed, 09 Oct 2019 20:52:21 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/ae3216b05a92ff56dcd6faf59ae06d0b/</guid>
+      <description>这两天看看网站的百度收录，还是有问题。&#xA;百度站长提交的时候会提示不是非本站点网站，我一直用的是不带www的链接提交，后来才发现这里的问题。&#xA;因为没有做301重定向，2个域名同时收录，导致分散权重，一般做法是保留代www的域名，这样全站就只保留带www的。把不带www的域名301到带www域名，集中权重好让蜘蛛爬。&#xA;因为没做这一步操作浪费了好多天的时间。</description>
+    </item>
+  </channel>
+</rss>

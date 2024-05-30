@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Z-BlogPHP on 虎山行网赚</title>
+    <link>https://hushanxingwz.github.io/tags/z-blogphp/</link>
+    <description>Recent content in Z-BlogPHP on 虎山行网赚</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 28 Mar 2020 21:29:40 +0800</lastBuildDate>
+    <atom:link href="https://hushanxingwz.github.io/tags/z-blogphp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ZblogPHP更新系统后出现Call to undefined function ResponseAdmin_TopMenu()</title>
+      <link>https://hushanxingwz.github.io/posts/1221b07226f9ed72b7f11817565c1219/</link>
+      <pubDate>Sat, 28 Mar 2020 21:29:40 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/1221b07226f9ed72b7f11817565c1219/</guid>
+      <description>中午把另外一个站点，用的Z-BlogPHP搭建，提示更新后，就顺手点了更新，没想到更新完就不能登录后台了。&#xA;找官方才解决这个问题，原来是：&#xA;更新服务器出了一点点问题，现在已修复了。请下载一个全新的1.6.0安装包，用FTP上传覆盖一下。&#xA;下载的更新包：https://www.zblogcn.com/program/zblogphp16/&#xA;Z-BlogPHP更新到1.6.0.2090 (Valyria)后，整体的UI更加扁平化，官方更新说明：&#xA;支持PHP 7.4&#xA;增加新默认主题 Zit和tprue&#xA;增加链接管理插件&#xA;侧栏数量增加至9个&#xA;允许从CDN获取访客IP&#xA;美化ZB后台和安装界面的样式&#xA;现在稳定长更新的几个老牌CMS就WordPress，Z-BlogPHP和帝国好用点。</description>
+    </item>
+  </channel>
+</rss>

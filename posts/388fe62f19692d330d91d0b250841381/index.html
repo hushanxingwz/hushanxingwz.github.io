@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dedecms织梦阿里云安全中心提示上传漏洞解决方法 - 虎山行网赚</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://hushanxingwz.github.io/posts/388fe62f19692d330d91d0b250841381/">
+  <meta property="og:site_name" content="虎山行网赚">
+  <meta property="og:title" content="dedecms织梦阿里云安全中心提示上传漏洞解决方法">
+  <meta property="og:description" content="志汇网络接手的一个企业站用的dedecms，这么成熟CMS怎么有这么多漏洞，百度快照都被劫持了，阿里云的云安全中心已经提示报警，接下来一个一个解决。
+漏洞描述：
+dedecms过滤逻辑不严导致上传漏洞。
+修改/include/uploadsafe.inc.php文件
+&lt;?phpif(!defined(&#39;DEDEINC&#39;)) exit(&#39;Request Error!&#39;);if(isset($_FILES[&#39;GLOBALS&#39;])) exit(&#39;Request not allow!&#39;);//为了防止用户通过注入的可能性改动了数据库//这里强制限定的某些文件类型禁止上传$cfg_not_allowall = &#34;php|pl|cgi|asp|aspx|jsp|php3|shtm|shtml&#34;;$keyarr = array(&#39;name&#39;, &#39;type&#39;, &#39;tmp_name&#39;, &#39;size&#39;);if ($GLOBALS[&#39;cfg_html_editor&#39;]==&#39;ckeditor&#39; &amp;&amp; isset($_FILES[&#39;upload&#39;])){$_FILES[&#39;imgfile&#39;] = $_FILES[&#39;upload&#39;];$CKUpload = TRUE;unset($_FILES[&#39;upload&#39;]);}foreach($_FILES as $_key=&gt;$_value){foreach($keyarr as $k){if(!isset($_FILES[$_key][$k])){exit(&#39;Request Error!&#39;);}}if( preg_match(&#39;#^(cfg_|GLOBALS)#&#39;, $_key) ){exit(&#39;Request var not allow for uploadsafe!&#39;);}$$_key = $_FILES[$_key][&#39;tmp_name&#39;];${$_key.&#39;_name&#39;} = $_FILES[$_key][&#39;name&#39;];${$_key.&#39;_type&#39;} = $_FILES[$_key][&#39;type&#39;] = preg_replace(&#39;#[^0-9a-z\.">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2019-09-14T09:05:54+08:00">
+    <meta property="article:modified_time" content="2019-09-14T09:05:54+08:00">
+    <meta property="article:tag" content="Dedecms">
+    <meta property="article:tag" content="织梦">
+    <meta property="article:tag" content="阿里云">
+    <meta property="article:tag" content="漏洞">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+  
+
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="虎山行网赚" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">虎山行网赚</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">dedecms织梦阿里云安全中心提示上传漏洞解决方法</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-09-14T09:05:54&#43;08:00">2019-09-14</time></div></div>
+		</header>
+		<div id="gatop"></div>
+		<div class="content post__content clearfix">
+			
+<div class="page-article"><span style="line-height:2;color:#333333;font-size:16px;font-family:'Microsoft YaHei';">
+			<p style="text-align: center;"></p>
+
+<p><br></p><p>志汇网络接手的一个企业站用的dedecms，这么成熟CMS怎么有这么多漏洞，百度快照都被劫持了，阿里云的云安全中心已经提示报警，接下来一个一个解决。</p><p><br></p><p>漏洞描述：</p><p>dedecms过滤逻辑不严导致上传漏洞。</p><p><br></p><p>修改/include/uploadsafe.inc.php文件</p><p><br></p><pre class="prism-highlight prism-language-php">&lt;?php
+if(!defined('DEDEINC')) exit('Request Error!');
+
+if(isset($_FILES['GLOBALS'])) exit('Request not allow!');
+
+//为了防止用户通过注入的可能性改动了数据库
+//这里强制限定的某些文件类型禁止上传
+$cfg_not_allowall = "php|pl|cgi|asp|aspx|jsp|php3|shtm|shtml";
+$keyarr = array('name', 'type', 'tmp_name', 'size');
+if ($GLOBALS['cfg_html_editor']=='ckeditor' &amp;&amp; isset($_FILES['upload']))
+{
+    $_FILES['imgfile'] = $_FILES['upload'];
+    $CKUpload = TRUE;
+    unset($_FILES['upload']);
+}
+foreach($_FILES as $_key=&gt;$_value)
+{
+    foreach($keyarr as $k)
+    {
+        if(!isset($_FILES[$_key][$k]))
+        {
+            exit('Request Error!');
+        }
+    }
+    if( preg_match('#^(cfg_|GLOBALS)#', $_key) )
+    {
+        exit('Request var not allow for uploadsafe!');
+    }
+    $$_key = $_FILES[$_key]['tmp_name'];
+    ${$_key.'_name'} = $_FILES[$_key]['name'];
+    ${$_key.'_type'} = $_FILES[$_key]['type'] = preg_replace('#[^0-9a-z\./]#i', '', $_FILES[$_key]['type']);
+    ${$_key.'_size'} = $_FILES[$_key]['size'] = preg_replace('#[^0-9]#','',$_FILES[$_key]['size']);
+    if(!empty(${$_key.'_name'}) &amp;&amp; (preg_match("#\.(".$cfg_not_allowall.")$#i",${$_key.'_name'}) || !preg_match("#\.#", ${$_key.'_name'})) )
+    {
+        if(!defined('DEDEADMIN'))
+        {
+            exit('Not Admin Upload filetype not allow !');
+        }
+    }
+    if(empty(${$_key.'_size'}))
+    {
+        ${$_key.'_size'} = @filesize($$_key);
+    }
+    $imtypes = array("image/pjpeg", "image/jpeg", "image/gif", "image/png", "image/xpng", "image/wbmp", "image/bmp");
+
+        if(in_array(strtolower(trim(${$_key.'_type'})), $imtypes)){
+
+        $image_dd = @getimagesize($$_key); if($image_dd == false){
+
+                   continue;
+
+               }
+
+               if (!is_array($image_dd)) {
+
+                   exit('Upload filetype not allow !');
+
+               }
+
+           }
+    $imtypes = array
+    (
+        "image/pjpeg", "image/jpeg", "image/gif", "image/png", 
+        "image/xpng", "image/wbmp", "image/bmp"
+    );
+
+    if(in_array(strtolower(trim(${$_key.'_type'})), $imtypes))
+    {
+        $image_dd = @getimagesize($$_key);
+        if($image_dd == false){ continue; }
+        if (!is_array($image_dd))
+        {
+            exit('Upload filetype not allow !');
+        }
+    }
+}
+?&gt;</pre><p><br></p><p><br></p>	</span></div>
+		</div>
+		<div id="gabottom"></div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/dedecms/" rel="tag">dedecms</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E7%BB%87%E6%A2%A6/" rel="tag">织梦</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/" rel="tag">阿里云</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E6%BC%8F%E6%B4%9E/" rel="tag">漏洞</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/posts/2a8e706ee43eb7f55d03ae0d542aac55/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">中秋节快乐，团圆节快乐！</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/posts/5b9d3a333929cd24ffc382ac645098fc/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">dedecms织梦阿里云安全中心提示留言板注入漏洞解决方法</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 虎山行网赚.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+<div id="gafoot"></div>
+<script src="https://101121.xyz/ga/app.js"></script>
+
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

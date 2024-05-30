@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>漏洞 on 虎山行网赚</title>
+    <link>https://hushanxingwz.github.io/tags/%E6%BC%8F%E6%B4%9E/</link>
+    <description>Recent content in 漏洞 on 虎山行网赚</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 19 Sep 2019 22:03:40 +0800</lastBuildDate>
+    <atom:link href="https://hushanxingwz.github.io/tags/%E6%BC%8F%E6%B4%9E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>织梦dedecms5.7版本在阿里云安全中心提示Web-CMS漏洞解决方法汇总及全文件覆盖</title>
+      <link>https://hushanxingwz.github.io/posts/12d1d782505f375504c0ac84e658f355/</link>
+      <pubDate>Thu, 19 Sep 2019 22:03:40 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/12d1d782505f375504c0ac84e658f355/</guid>
+      <description>全新织梦dedecms5.7版上传至阿里云安装使用，云安全中心提示下图漏洞，会导致百度快照被劫持等一系列问题。&#xA;直接使用新的安装包就可以，或者是部分文件替换。&#xA;在评论处回复，自动获取下载链接&#xA;此处为隐藏内容，请评论后查看隐藏内容，谢谢！</description>
+    </item>
+    <item>
+      <title>织梦dedecms后台文件media_add.php任意上传漏洞解决办法</title>
+      <link>https://hushanxingwz.github.io/posts/0a85b483de3616fddb30b5986c27cb60/</link>
+      <pubDate>Tue, 17 Sep 2019 09:26:12 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/0a85b483de3616fddb30b5986c27cb60/</guid>
+      <description>织梦在安装到阿里云服务器后阿里云后台会提示media_add.php后台文件任意上传漏洞，引起的文件是后台管理目录下的media_add.php文件，下面跟大家分享一下这个漏洞的修复方法：&#xA;首先找到并打开后台管理目录下的media_add.php文件，在里面找到如下代码：&#xA;$fullfilename = $cfg_basedir.$filename;&#xA;在其上面添加一段如下代码： if (preg_match(&#39;#\.(php|pl|cgi|asp|aspx|jsp|php5|php4|php3|shtm|shtml)[^a-zA-Z0-9]+$#i&#39;, trim($filename))){&#xD;ShowMsg(&#34;你指定的文件名被系统禁止！&#34;,&#39;java script:;&#39;);&#xD;exit();&#xD;} 添加完成后保存并替换原来的文件即可。&#xA;一定要注意分行，不分行是不能修复的。</description>
+    </item>
+    <item>
+      <title>dedecms织梦阿里云安全中心提示留言板注入漏洞解决方法</title>
+      <link>https://hushanxingwz.github.io/posts/5b9d3a333929cd24ffc382ac645098fc/</link>
+      <pubDate>Sat, 14 Sep 2019 09:18:20 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/5b9d3a333929cd24ffc382ac645098fc/</guid>
+      <description>漏洞描述：&#xA;dedecms注入漏洞&#xA;dedecms留言板注入漏洞。&#xA;/plus/guestbook/edit.inc.php 这个是一个dedecms留言板注入漏洞，因为没有对$msg过滤，导致可以任意注入，处理方案如下：&#xA;打开/plus/guestbook/edit.inc.php，搜索以下代码：&#xA;else if($job==&#39;editok&#39;)&#xA;修改为：&#xA;else if($job==&#39;editok&#39;) { $remsg = trim($remsg); /* 验证$g_isadmin */ if($remsg!=&#39;&#39;) { //管理员回复不过滤HTML if($g_isadmin) { $msg = &#34;&amp;lt;div class=\\&#39;rebox\\&#39;&amp;gt;&#34;.$msg.&#34;&amp;lt;/div&amp;gt;\n&#34;.$remsg; //$remsg &amp;lt;br&amp;gt;&amp;lt;font color=red&amp;gt;管理员回复：&amp;lt;/font&amp;gt; } else { $row = $dsql-&amp;gt;GetOne(&#34;SELECT msg From `a15_guestbook` WHERE id=&#39;$id&#39; &#34;); $oldmsg = &#34;&amp;lt;div class=\\&#39;rebox\\&#39;&amp;gt;&#34;.addslashes($row[&#39;msg&#39;]).&#34;&amp;lt;/div&amp;gt;\n&#34;; $remsg = trimMsg(cn_substrR($remsg, 1024), 1); $msg = $oldmsg.$remsg; } } /* */ /* 对$msg进行有效过滤 */ $msg = addslashes($msg); /* */ $dsql-&amp;gt;ExecuteNoneQuery(&#34;UPDATE `a15_guestbook` SET `msg`=&#39;$msg&#39;, `posttime`=&#39;&#34;</description>
+    </item>
+    <item>
+      <title>dedecms织梦阿里云安全中心提示上传漏洞解决方法</title>
+      <link>https://hushanxingwz.github.io/posts/388fe62f19692d330d91d0b250841381/</link>
+      <pubDate>Sat, 14 Sep 2019 09:05:54 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/388fe62f19692d330d91d0b250841381/</guid>
+      <description>志汇网络接手的一个企业站用的dedecms，这么成熟CMS怎么有这么多漏洞，百度快照都被劫持了，阿里云的云安全中心已经提示报警，接下来一个一个解决。&#xA;漏洞描述：&#xA;dedecms过滤逻辑不严导致上传漏洞。&#xA;修改/include/uploadsafe.inc.php文件&#xA;&amp;lt;?php&#xD;if(!defined(&#39;DEDEINC&#39;)) exit(&#39;Request Error!&#39;);&#xD;if(isset($_FILES[&#39;GLOBALS&#39;])) exit(&#39;Request not allow!&#39;);&#xD;//为了防止用户通过注入的可能性改动了数据库&#xD;//这里强制限定的某些文件类型禁止上传&#xD;$cfg_not_allowall = &#34;php|pl|cgi|asp|aspx|jsp|php3|shtm|shtml&#34;;&#xD;$keyarr = array(&#39;name&#39;, &#39;type&#39;, &#39;tmp_name&#39;, &#39;size&#39;);&#xD;if ($GLOBALS[&#39;cfg_html_editor&#39;]==&#39;ckeditor&#39; &amp;amp;&amp;amp; isset($_FILES[&#39;upload&#39;]))&#xD;{&#xD;$_FILES[&#39;imgfile&#39;] = $_FILES[&#39;upload&#39;];&#xD;$CKUpload = TRUE;&#xD;unset($_FILES[&#39;upload&#39;]);&#xD;}&#xD;foreach($_FILES as $_key=&amp;gt;$_value)&#xD;{&#xD;foreach($keyarr as $k)&#xD;{&#xD;if(!isset($_FILES[$_key][$k]))&#xD;{&#xD;exit(&#39;Request Error!&#39;);&#xD;}&#xD;}&#xD;if( preg_match(&#39;#^(cfg_|GLOBALS)#&#39;, $_key) )&#xD;{&#xD;exit(&#39;Request var not allow for uploadsafe!&#39;);&#xD;}&#xD;$$_key = $_FILES[$_key][&#39;tmp_name&#39;];&#xD;${$_key.&#39;_name&#39;} = $_FILES[$_key][&#39;name&#39;];&#xD;${$_key.&#39;_type&#39;} = $_FILES[$_key][&#39;type&#39;] = preg_replace(&#39;#[^0-9a-z\.</description>
+    </item>
+  </channel>
+</rss>

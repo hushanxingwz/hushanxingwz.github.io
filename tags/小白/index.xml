@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>小白 on 虎山行网赚</title>
+    <link>https://hushanxingwz.github.io/tags/%E5%B0%8F%E7%99%BD/</link>
+    <description>Recent content in 小白 on 虎山行网赚</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 17 Sep 2019 12:12:59 +0800</lastBuildDate>
+    <atom:link href="https://hushanxingwz.github.io/tags/%E5%B0%8F%E7%99%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网赚小白入坑暴利虚拟产品项目后，发现被骗了</title>
+      <link>https://hushanxingwz.github.io/posts/8eb61cb09337da11863eb6451e4e5de0/</link>
+      <pubDate>Tue, 17 Sep 2019 12:12:59 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/8eb61cb09337da11863eb6451e4e5de0/</guid>
+      <description>虚拟项目是我一直推崇的，毕竟被动收入，躺着把钱赚了。&#xA;无意间看到一篇“自动化虚拟产品软件”的推文，十分兴奋，这就是我想要的效果，全自动化、被动赚钱项目。摘取推文其中一段：&#xA;虚拟产品--无处不在的“无本生意”&#xA;所谓“虚拟产品”，就是指小吃技术、视频教程、学习资料、网赚项目这些（不包括话费、点卡之流）。大家都知道，虚拟产品是非常暴利的，因为它几乎没有什么成本，一份资料，可以复制复制再复制，就像一台印钞机，你每一次复制都是印刷钞票。&#xA;再看看标题：&#xA;虚拟产品半自动月入3万！真实案例！虚拟暴利项目，如何把10元产品30天卖到100万！傻瓜式引流变现项目，现在入行就能月赚万元&#xA;网赚推文博眼球起标题的惯用套路，每天赚这么多，还巴不得项目藏着不扩散，先撸一大把。出来卖项目的主要是卖概念，重理论轻实操。&#xA;这个项目有自己的软件叫“银天云客”，不知道是不是自己开发的，类似网盘，用户上传虚拟产品进行分享，虚拟货源就可以出售赚钱，集合大家手中的资源进行转卖。&#xA;所谓的订单自动化就是把货源挂在发卡网自动发货。&#xA;查资料的时候也看到了负面评论，廖嘉晨是个骗子，他说的什么网赚，银天云客是个骗局，大家小心。&#xA;http://blog.sina.com.cn/wanjieshanghai&#xA;以上言论不是志汇分享发表，笑脸&amp;gt;&amp;lt;&#xA;最后，虚拟产品项目值得深挖，虚拟货源做到人无我有，人有我优，便可无敌。&#xA;小白入门网赚确实要碰很多次灰，遇到些骗子大忽悠，等到摸到门路你便是 大咖，说说你的网赚之路。</description>
+    </item>
+    <item>
+      <title>Python入门学习之注释、行与缩进</title>
+      <link>https://hushanxingwz.github.io/posts/58861a80ff384533cd8252ef2a16bf3b/</link>
+      <pubDate>Mon, 09 Sep 2019 20:13:39 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/58861a80ff384533cd8252ef2a16bf3b/</guid>
+      <description>Python3中单行注释以 # 开头，实例如下：#!/usr/bin/python3&#xD;# 第一个注释&#xD;print (&#34;Hello, Python!&#34;) # 第二个注释&#xA;Python3中多行注释可以用多个 # 号，还有 &#39;&#39;&#39; 和 &#34;&#34;&#34;。实例如下：#!/usr/bin/python3&#xD;# 第一个注释# 第二个注释&#xD;&#39;&#39;&#39;&#xD;第三注释&#xD;第四注释&#xD;&#39;&#39;&#39;&#xD;&#34;&#34;&#34;&#xD;第五注释&#xD;第六注释&#xD;&#34;&#34;&#34;&#xD;print (&#34;Hello, Python!&#34;)&#xA;Python3中行与缩进python最具特色的就是使用缩进来表示代码块，不需要使用大括号 {} 。&#xA;缩进的空格数是可变的，但是同一个代码块的语句必须包含相同的缩进空格数。实例如下：&#xA;if True: print (&#34;True&#34;)&#xD;else: print (&#34;False&#34;)&#xA;以下代码最后一行语句缩进数的空格数不一致，会导致运行错误：&#xA;if True:&#xD;print (&#34;Answer&#34;)&#xD;print (&#34;True&#34;)&#xD;else:&#xD;print (&#34;Answer&#34;)&#xD;print (&#34;False&#34;) # 缩进不一致，会导致运行错误</description>
+    </item>
+    <item>
+      <title>Python入门学习之Python编辑器PyCharm2019安装教程</title>
+      <link>https://hushanxingwz.github.io/posts/e63ac0e952d2404ddbffb7f83acecffe/</link>
+      <pubDate>Sun, 08 Sep 2019 11:33:10 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/e63ac0e952d2404ddbffb7f83acecffe/</guid>
+      <description>&#xA;&lt;div class=&#34;page-article&#34;&gt;&lt;span style=&#34;line-height:2;color:#333333;font-size:16px;font-family:&#39;Microsoft YaHei&#39;;&#34;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;p style=&#34;text-align: center;&#34;&gt;&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;&lt;span style=&#34;font-size: 16px;&#34;&gt;PyCharm编辑器是是个人认为功能齐全且专用的Python IDE，还能汉化。不过也还有其他比较好用的编辑器比如说Jupyter Notebook，Spyder。这里我用的是PyCharm2019，来看看它的安装过程&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&#34;font-size: 16px;&#34;&gt;首先下载安装包，可以PyCharm官网点击链接，直接下载https://www.jetbrains.com/pycharm/download/#section=windows，这里是windows版的，其他版本自行寻找。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://images2.imgbox.com/67/df/rW0SY2Vu_o.png&#34; title=&#34;Python入门学习之Python编辑器PyCharm2019安装教程&#34; alt=&#34;Python入门学习之Python编辑器PyCharm2019安装教程&#34; width=&#34;100%&#34; height=&#34;&#34; border=&#34;0&#34; vspace=&#34;0&#34;&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&#34;font-size: 16px;&#34;&gt;点击Next后继续安装选择，根据自己需求选择，我是全选的。再接着下一步，点击稍后重启。安装完成。&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python入门学习之Python3.7下载安装</title>
+      <link>https://hushanxingwz.github.io/posts/862b2a2cc513f2d6fb1ca568ff5489b8/</link>
+      <pubDate>Sun, 08 Sep 2019 11:05:59 +0800</pubDate>
+      <guid>https://hushanxingwz.github.io/posts/862b2a2cc513f2d6fb1ca568ff5489b8/</guid>
+      <description>Python是目前最火的一门编程语言，应用非常广泛，自动化办公、网页爬虫、web开发。&#xA;西红柿打算开始从0开始学习Python。&#xA;今天是打算配置好python的安装环境和主程序的安装。&#xA;下载的路径是python官网https://www.python.org（浏览器自动翻译，英语不是很好）&#xA;打开官网后选择好自己的系统下载。&#xA;下载 完成后，打开安装包选择Install Now 会按照默认路径进行安装（不建议）。建议选择Customize installation修改安装路径。并且勾选上最下方的ADDPython 3.7 to PATH。&#xA;我是默认安装在C盘，你也可以选择其他的盘符。安装完成之后打开开始找到python3.7（64-bit）&#xA;打开之后试试第一个程序</description>
+    </item>
+  </channel>
+</rss>
